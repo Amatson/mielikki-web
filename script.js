@@ -172,13 +172,18 @@ function showBlogPost(postId) {
     const post = blogPosts.find(p => p.id === postId);
     if (!post) return;
     
-    const title = post.title[currentLanguage] || post.title.fi;
-    const content = post.content[currentLanguage] || post.content.fi;
+    // Map post IDs to their page URLs
+    const postUrls = {
+        1: 'blog/post-1.html',
+        2: 'blog/post-2.html',
+        3: 'blog/post-3.html',
+        4: 'blog/post-4.html',
+        5: 'blog/post-5.html',
+        6: 'blog/post-6.html'
+    };
     
-    // Create modal or alert with full content
-    alert(`${title}\n\n${content}\n\nAuthor: ${post.author}\nDate: ${formatDate(post.date)}`);
-    
-    // In a production environment, you would create a proper modal or navigate to a dedicated blog post page
+    // Navigate to the blog post page
+    window.location.href = postUrls[postId] || '#';
 }
 
 // Contact Form

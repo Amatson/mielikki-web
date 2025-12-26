@@ -43,7 +43,20 @@ Netlify CMS (now called Decap CMS) is a content management system that provides 
 2. Select **Invite only** (for security)
 3. Save changes
 
-### Step 5: Set External Providers (Optional)
+### Step 5: Automated Build Process
+
+**Important:** The site uses an automated build script that converts markdown blog posts to HTML pages.
+
+When a veterinarian publishes a blog post via CMS:
+1. Netlify CMS saves the markdown file to `_posts/` folder
+2. This triggers a Git commit to your repository
+3. Netlify detects the change and runs `generate-blog-pages.js`
+4. The script converts markdown to HTML in `blog/` folder
+5. Site is automatically deployed with the new post
+
+**No manual intervention needed!** The workflow is fully automated.
+
+### Step 6: Set External Providers (Optional)
 
 If you want users to login with Google/GitHub:
 

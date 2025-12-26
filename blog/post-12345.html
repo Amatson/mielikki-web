@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tää on testipostaus netlifyn kautta">
+    <meta name="keywords" content="kissa, eläinlääkäri, kissanhoito">
+    <meta property="og:title" content="Testipostaus">
+    <meta property="og:description" content="Tää on testipostaus netlifyn kautta">
+    <meta property="og:type" content="article">
+    <link rel="icon" type="image/svg+xml" href="../images/mielikki-logo.svg">
+    <title>Testipostaus - Mielikki</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+        .blog-post-page {
+            padding: 120px 20px 80px;
+            min-height: 100vh;
+        }
+        .blog-post-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .back-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+        .lang-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .lang-btn {
+            padding: 8px 16px;
+            border: 2px solid var(--primary-color);
+            background: white;
+            color: var(--primary-color);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .lang-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        .post-meta {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .post-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        .post-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .post-content p {
+            margin-bottom: 20px;
+        }
+        .post-content h2 {
+            color: var(--primary-color);
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+        }
+        .post-content h3 {
+            color: var(--primary-color);
+            margin: 30px 0 15px;
+            font-size: 1.4rem;
+        }
+        .post-content ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin-bottom: 10px;
+        }
+        .post-content blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding: 15px 20px;
+            margin: 30px 0;
+            background: #f9f9f9;
+            font-style: italic;
+        }
+        .post-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .post-title {
+                font-size: 2rem;
+            }
+            .post-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/mielikki-logo.svg" alt="Mielikki Logo" style="height: 40px;">
+                Mielikki
+            </a>
+        </div>
+    </nav>
+
+    <section class="blog-post-page">
+        <div class="blog-post-container">
+            <a href="../index.html#blog" class="back-link" id="backLink">← Takaisin blogiin</a>
+            
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="fi">FI</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+
+            <div class="post-meta">📅 2025-12-26 | ✍️ ELL Julia Haukilintu</div>
+            <h1 class="post-title" id="postTitle">Testipostaus</h1>
+            <img src="https://images.pexels.com/photos/54632/cat-animal-eyes-grey-54632.jpeg" alt="Testipostaus" class="post-image">
+            
+            <div class="post-content">
+                <div data-lang="fi">
+                    <p>Tää on testipostaus netlifyn kautta jeejee</p>
+                </div>
+                <div data-lang="en" style="display: none;">
+                    <p>Tää on testipostaus netlifyn kautta jeejee englanniksi</p>
+                </div>
+                <div data-lang="ru" style="display: none;">
+                    <p>Tää on testipostaus netlifyn kautta jeejee venäjäksi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mielikki Eläinlääkäriasema</p>
+        </div>
+    </footer>
+
+    <script>
+        const titles = {
+            fi: 'Testipostaus',
+            en: 'TestPost',
+            ru: 'testtest'
+        };
+        const backs = { fi: 'Takaisin blogiin', en: 'Back to Blog', ru: 'Назад к блогу' };
+        
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const lang = this.dataset.lang;
+                document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                document.querySelectorAll('[data-lang]').forEach(el => {
+                    el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+                });
+                document.getElementById('postTitle').textContent = titles[lang];
+                document.getElementById('backLink').textContent = '← ' + backs[lang];
+            });
+        });
+
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
