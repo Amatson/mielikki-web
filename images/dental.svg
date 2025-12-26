@@ -1,0 +1,6 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#e0f7fa"/>
+  <ellipse cx="280" cy="200" rx="30" ry="50" fill="#ffffff" stroke="#2c5f2d" stroke-width="3"/>
+  <ellipse cx="320" cy="200" rx="30" ry="50" fill="#ffffff" stroke="#2c5f2d" stroke-width="3"/>
+  <text x="300" y="300" font-family="Arial" font-size="20" fill="#2c5f2d" text-anchor="middle">Dental Care</text>
+</svg>

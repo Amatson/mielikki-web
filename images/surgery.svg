@@ -1,0 +1,6 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#e8eaf6"/>
+  <rect x="150" y="100" width="300" height="200" rx="10" fill="#ffffff" stroke="#2c5f2d" stroke-width="3"/>
+  <line x1="280" y1="200" x2="320" y2="200" stroke="#ff6b35" stroke-width="6" stroke-linecap="round"/>
+  <text x="300" y="330" font-family="Arial" font-size="20" fill="#2c5f2d" text-anchor="middle">Surgery</text>
+</svg>

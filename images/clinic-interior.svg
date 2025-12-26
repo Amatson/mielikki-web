@@ -1,0 +1,7 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#fafafa"/>
+  <rect x="50" y="350" width="700" height="200" fill="#97bc62" opacity="0.3"/>
+  <rect x="100" y="200" width="200" height="300" fill="#ffffff" stroke="#2c5f2d" stroke-width="2"/>
+  <rect x="500" y="200" width="200" height="300" fill="#ffffff" stroke="#2c5f2d" stroke-width="2"/>
+  <text x="400" y="100" font-family="Arial" font-size="32" fill="#2c5f2d" text-anchor="middle">Modern Clinic Interior</text>
+</svg>

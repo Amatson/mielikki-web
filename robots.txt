@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mielikkivet.fi/sitemap.xml
+
+# Disallow indexing of images folder if desired
+# User-agent: *
+# Disallow: /images/
+
+# Optimize crawl rate
+Crawl-delay: 1

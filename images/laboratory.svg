@@ -1,0 +1,6 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f1f8e9"/>
+  <path d="M 250 120 L 250 200 L 220 280 L 220 290 Q 220 300 230 300 L 370 300 Q 380 300 380 290 L 380 280 L 350 200 L 350 120 Z" fill="#ffffff" stroke="#2c5f2d" stroke-width="3"/>
+  <rect x="240" y="240" width="120" height="40" fill="#97bc62" opacity="0.5"/>
+  <text x="300" y="340" font-family="Arial" font-size="20" fill="#2c5f2d" text-anchor="middle">Laboratory</text>
+</svg>

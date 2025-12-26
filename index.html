@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mielikki - Lemmikkisi luottoeläinlääkäri. Kattavat eläinlääkäripalvelut koirille ja kissoille. Varaa aika tänään!">
+    <meta name="keywords" content="eläinlääkäri, veterinary, djurklinik, koira, kissa, dog, cat, hund, katt, Mielikki">
+    <meta name="author" content="Mielikki Veterinary Clinic">
+    <meta property="og:title" content="Mielikki - Lemmikkisi luottoeläinlääkäri">
+    <meta property="og:description" content="Kattavat eläinlääkäripalvelut koirille ja kissoille">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mielikkivet.fi">
+    <meta property="og:image" content="./images/mielikki-logo.svg">
+    <link rel="canonical" href="https://mielikkivet.fi">
+    <link rel="icon" type="image/svg+xml" href="./images/mielikki-logo.svg">
+    <title>Mielikki - Lemmikkisi luottoeläinlääkäri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VeterinaryCare",
+      "name": "Mielikki Eläinlääkäriasema",
+      "image": "https://mielikkivet.fi/images/mielikki-logo.svg",
+      "url": "https://mielikkivet.fi",
+      "telephone": "+358401234567",
+      "email": "info@mielikkivet.fi",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Metsätie 15",
+        "addressLocality": "Helsinki",
+        "postalCode": "00100",
+        "addressCountry": "FI"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "14:00"
+        }
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Language Switcher & Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="./images/mielikki-logo.svg" alt="Mielikki Logo" class="logo">
+                    <span class="brand-name">MIELIKKI</span>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link" data-i18n="nav_home">Etusivu</a>
+                    <a href="#services" class="nav-link" data-i18n="nav_services">Palvelut</a>
+                    <a href="#about" class="nav-link" data-i18n="nav_about">Meistä</a>
+                    <a href="#blog" class="nav-link" data-i18n="nav_blog">Blogi</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav_contact">Yhteystiedot</a>
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="fi">FI</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="sv">SV</button>
+                    </div>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">Lemmikkisi luottoeläinlääkäri</h1>
+            <p data-i18n="hero_subtitle">Kun kokemuksella on väliä - tarjoamme kattavat eläinlääkäripalvelut ja paljon erikoisosaamista</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary" data-i18n="btn_book">Varaa aika</a>
+                <a href="#services" class="btn btn-secondary" data-i18n="btn_services">Tutustu palveluihin</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="icon">📍</div>
+                    <h3 data-i18n="info_location_title">Sijainti</h3>
+                    <p>Metsätie 15, Helsinki</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">📞</div>
+                    <h3 data-i18n="info_phone_title">Puhelin</h3>
+                    <p><a href="tel:+358401234567">+358 40 123 4567</a></p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🕐</div>
+                    <h3 data-i18n="info_hours_title">Aukioloajat</h3>
+                    <p data-i18n="info_hours_text">Ma-Pe 08:00-18:00</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">📧</div>
+                    <h3 data-i18n="info_email_title">Sähköposti</h3>
+                    <p><a href="mailto:info@mielikkivet.fi">info@mielikkivet.fi</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services_title">Monipuoliset eläinlääkäripalvelut</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="./images/vaccination.svg" alt="Vaccinations">
+                    <h3 data-i18n="service_vaccination">Rokotukset</h3>
+                    <p data-i18n="service_vaccination_desc">Kattava rokotusohjelma koirille ja kissoille. Suojaamme lemmikkisi tärkeimmiltä taudeilta.</p>
+                </div>
+                <div class="service-card">
+                    <img src="./images/health-check.svg" alt="Health Checks">
+                    <h3 data-i18n="service_health">Terveystarkastukset</h3>
+                    <p data-i18n="service_health_desc">Säännölliset terveystarkastukset varmistavat lemmikkisi hyvinvoinnin ja auttavat ennaltaehkäisemään sairauksia.</p>
+                </div>
+                <div class="service-card">
+                    <img src="./images/surgery.svg" alt="Surgery">
+                    <h3 data-i18n="service_surgery">Leikkaukset</h3>
+                    <p data-i18n="service_surgery_desc">Suoritamme laajan valikoiman leikkauksia kastraatioista vaativampiin ortopedisiin toimenpiteisiin.</p>
+                </div>
+                <div class="service-card">
+                    <img src="./images/dental.svg" alt="Dental Care">
+                    <h3 data-i18n="service_dental">Hammashoito</h3>
+                    <p data-i18n="service_dental_desc">Hampaiden ja suun terveys on tärkeä osa lemmikkisi kokonaishyvinvointia.</p>
+                </div>
+                <div class="service-card">
+                    <img src="./images/emergency.svg" alt="Emergency Care">
+                    <h3 data-i18n="service_emergency">Päivystys</h3>
+                    <p data-i18n="service_emergency_desc">Olemme valmiina auttamaan myös kiireellisissä tilanteissa.</p>
+                </div>
+                <div class="service-card">
+                    <img src="./images/laboratory.svg" alt="Laboratory">
+                    <h3 data-i18n="service_lab">Laboratorio</h3>
+                    <p data-i18n="service_lab_desc">Moderni laboratorio tarjoaa nopeat ja luotettavat tutkimustulokset.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-i18n="about_title">Meistä</h2>
+                    <h3 data-i18n="about_subtitle">Kun kokemuksella on väliä</h3>
+                    <p data-i18n="about_text1">Mielikki on moderni eläinlääkäriasema Helsingissä. Meille voit tulla niin pienissä kuin isommissakin asioissa – oli kyseessä sitten rokotus, kastraatio tai murtuman hoito.</p>
+                    <p data-i18n="about_text2">Tarjoamme kattavat eläinlääkäripalvelut ja paljon erikoisosaamista. Meillä loistaa lemmikkien hyvinvointi!</p>
+                    <p data-i18n="about_text3">Tiimimme koostuu kokeneiden eläinlääkäreiden lisäksi ammattitaitoisista eläintenhoitajista, jotka huolehtivat lemmikkisi hyvinvoinnista lämmöllä ja ammattitaidolla.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./images/clinic-interior.svg" alt="Mielikki Clinic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title" data-i18n="blog_title">Ajankohtaista</h2>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be loaded here -->
+            </div>
+            <div class="blog-navigation">
+                <button class="btn btn-secondary" id="loadMoreBtn" data-i18n="btn_load_more">Lataa lisää</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">Yhteystiedot ja saapumisohjeet</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3 data-i18n="contact_address">Osoite</h3>
+                        <p>Mielikki Eläinlääkäriasema<br>
+                        Metsätie 15<br>
+                        00100 Helsinki</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3 data-i18n="contact_phone">Puhelin</h3>
+                        <p><a href="tel:+358401234567">+358 40 123 4567</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3 data-i18n="contact_email">Sähköposti</h3>
+                        <p><a href="mailto:info@mielikkivet.fi">info@mielikkivet.fi</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3 data-i18n="contact_hours">Aukioloajat</h3>
+                        <p data-i18n="contact_hours_weekdays">Maanantai - Perjantai: 08:00 - 18:00</p>
+                        <p data-i18n="contact_hours_saturday">Lauantai: 10:00 - 14:00</p>
+                        <p data-i18n="contact_hours_sunday">Sunnuntai: Suljettu</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3 data-i18n="contact_parking">Pysäköinti</h3>
+                        <p data-i18n="contact_parking_text">Ilmainen asiakaspysäköinti klinikan edessä.</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 data-i18n="contact_form_title">Varaa aika</h3>
+                    <form id="bookingForm">
+                        <input type="text" placeholder="Nimi" data-i18n-placeholder="form_name" required>
+                        <input type="email" placeholder="Sähköposti" data-i18n-placeholder="form_email" required>
+                        <input type="tel" placeholder="Puhelin" data-i18n-placeholder="form_phone" required>
+                        <input type="text" placeholder="Lemmikin nimi" data-i18n-placeholder="form_pet" required>
+                        <textarea placeholder="Viesti" data-i18n-placeholder="form_message" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary" data-i18n="btn_send">Lähetä</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="./images/mielikki-logo.svg" alt="Mielikki Logo" class="footer-logo">
+                    <h3>MIELIKKI</h3>
+                    <p data-i18n="footer_tagline">Lemmikkisi luottoeläinlääkäri</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_quick_links">Pikalinkit</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav_home">Etusivu</a></li>
+                        <li><a href="#services" data-i18n="nav_services">Palvelut</a></li>
+                        <li><a href="#about" data-i18n="nav_about">Meistä</a></li>
+                        <li><a href="#blog" data-i18n="nav_blog">Blogi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_contact">Yhteystiedot</h4>
+                    <p>Metsätie 15, Helsinki</p>
+                    <p><a href="tel:+358401234567">+358 40 123 4567</a></p>
+                    <p><a href="mailto:info@mielikkivet.fi">info@mielikkivet.fi</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_hours">Aukioloajat</h4>
+                    <p data-i18n="contact_hours_weekdays">Ma-Pe: 08:00 - 18:00</p>
+                    <p data-i18n="contact_hours_saturday">La: 10:00 - 14:00</p>
+                    <p data-i18n="contact_hours_sunday">Su: Suljettu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mielikki Eläinlääkäriasema. <span data-i18n="footer_rights">Kaikki oikeudet pidätetään.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="blog-posts.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
