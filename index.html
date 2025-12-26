@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mielikki - Lemmikkisi luottoeläinlääkäri. Kattavat eläinlääkäripalvelut koirille ja kissoille. Varaa aika tänään!">
-    <meta name="keywords" content="eläinlääkäri, veterinary, djurklinik, koira, kissa, dog, cat, hund, katt, Mielikki">
+    <meta name="description" content="Mielikki - Kissasi luottoeläinlääkäri. Kattavat kissaeläinlääkäripalvelut. Varaa aika tänään!">
+    <meta name="keywords" content="eläinlääkäri, veterinary, ветеринар, kissa, cat, кошка, kissaeläinlääkäri, feline veterinary, Mielikki">
     <meta name="author" content="Mielikki Veterinary Clinic">
-    <meta property="og:title" content="Mielikki - Lemmikkisi luottoeläinlääkäri">
-    <meta property="og:description" content="Kattavat eläinlääkäripalvelut koirille ja kissoille">
+    <meta property="og:title" content="Mielikki - Kissasi luottoeläinlääkäri">
+    <meta property="og:description" content="Kattavat kissaeläinlääkäripalvelut">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mielikkivet.fi">
     <meta property="og:image" content="./images/mielikki-logo.svg">
@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,7 +72,7 @@
                     <div class="language-switcher">
                         <button class="lang-btn active" data-lang="fi">FI</button>
                         <button class="lang-btn" data-lang="en">EN</button>
-                        <button class="lang-btn" data-lang="sv">SV</button>
+                        <button class="lang-btn" data-lang="ru">RU</button>
                     </div>
                 </div>
                 <div class="hamburger" id="hamburger">
@@ -87,8 +88,8 @@
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 data-i18n="hero_title">Lemmikkisi luottoeläinlääkäri</h1>
-            <p data-i18n="hero_subtitle">Kun kokemuksella on väliä - tarjoamme kattavat eläinlääkäripalvelut ja paljon erikoisosaamista</p>
+            <h1 data-i18n="hero_title">Kissasi luottoeläinlääkäri</h1>
+            <p data-i18n="hero_subtitle">Kun kokemuksella on väliä - erikoistumme kissojen hoitoon ja hyvinvointiin</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary" data-i18n="btn_book">Varaa aika</a>
                 <a href="#services" class="btn btn-secondary" data-i18n="btn_services">Tutustu palveluihin</a>
@@ -280,5 +281,16 @@
     <script src="translations.js"></script>
     <script src="blog-posts.js"></script>
     <script src="script.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 </body>
 </html>

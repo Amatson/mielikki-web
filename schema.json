@@ -43,7 +43,7 @@
     "reviewCount": "127"
   },
   "description": "Mielikki on moderni eläinlääkäriasema Helsingissä. Tarjoamme kattavat eläinlääkäripalvelut koirille ja kissoille.",
-  "availableLanguage": ["Finnish", "English", "Swedish"],
+  "availableLanguage": ["Finnish", "English", "Russian"],
   "medicalSpecialty": "Veterinary Medicine",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",

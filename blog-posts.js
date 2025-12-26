@@ -1,129 +1,129 @@
-// Blog posts data with multilingual content
+// Blog posts data with multilingual content (cat-specific)
 const blogPosts = [
     {
         id: 1,
         image: "./images/blog-winter-care.svg",
         date: "2025-12-15",
-        author: "Dr. Maria Virtanen",
+        author: "ELL Julia Haukilintu",
         title: {
-            fi: "Talvikauden lemmikinhoito-oppaat",
-            en: "Winter Season Pet Care Guides",
-            sv: "Vinterårets husdjursvårdsguider"
+            fi: "Talvikauden kissanhoito-oppaat",
+            en: "Winter Season Cat Care Guides",
+            ru: "Руководства по уходу за кошками зимой"
         },
         excerpt: {
-            fi: "Talvi tuo mukanaan erityisiä haasteita lemmikkien hoitoon. Kylmä sää, kuiva sisäilma ja lumi voivat vaikuttaa lemmikkisi hyvinvointiin. Tässä artikkelissa käymme läpi tärkeimmät vinkit talvikauden lemmikinhoidosta.",
-            en: "Winter brings special challenges to pet care. Cold weather, dry indoor air, and snow can affect your pet's wellbeing. In this article, we go through the most important tips for winter pet care.",
-            sv: "Vintern medför speciella utmaningar för husdjursvård. Kallt väder, torr inomhusluft och snö kan påverka ditt husdjurs välbefinnande. I denna artikel går vi igenom de viktigaste tipsen för husdjursvård på vintern."
+            fi: "Talvi tuo mukanaan erityisiä haasteita kissojen hoitoon. Kylmä sää, kuiva sisäilma ja mahdolliset ulkoilut lumessa voivat vaikuttaa kissasi hyvinvointiin. Tässä artikkelissa käymme läpi tärkeimmät vinkit talvikauden kissanhoidosta.",
+            en: "Winter brings special challenges to cat care. Cold weather, dry indoor air, and possible outdoor trips in snow can affect your cat's wellbeing. In this article, we go through the most important tips for winter cat care.",
+            ru: "Зима приносит особые проблемы в уходе за кошками. Холодная погода, сухой воздух в помещении и возможные прогулки на снегу могут повлиять на благополучие вашей кошки. В этой статье мы рассмотрим самые важные советы по уходу за кошками зимой."
         },
         content: {
-            fi: "Talvikausi vaatii erityistä huomiota lemmikkien hoitoon. Koirien tassut kärsivät usein kuivuudesta ja halkeamisesta, kun ne altistuvat lumelle ja jäälle. Suosittelemme käyttämään tassurasvaa säännöllisesti ja huolehtimaan tassujen puhdistamisesta ulkoilun jälkeen. Kylmä sää voi myös vaikuttaa lemmikkisi ruokahaluun ja aktiivisuuteen. Varmista, että lemmikkisi saa riittävästi lämpöä ja ravintoa.",
-            en: "The winter season requires special attention to pet care. Dogs' paws often suffer from dryness and cracking when exposed to snow and ice. We recommend using paw balm regularly and ensuring paw cleaning after outdoor activities. Cold weather can also affect your pet's appetite and activity. Make sure your pet gets enough warmth and nutrition.",
-            sv: "Vintersäsongen kräver särskild uppmärksamhet på husdjursvård. Hundars tassar lider ofta av torrhet och sprickor när de utsätts för snö och is. Vi rekommenderar att använda tassbalsam regelbundet och se till att tassarna rengörs efter utomhusaktiviteter. Kallt väder kan också påverka ditt husdjurs aptit och aktivitet. Se till att ditt husdjur får tillräckligt med värme och näring."
+            fi: "Talvikausi vaatii erityistä huomiota kissojen hoitoon. Sisäkissat kärsivät usein kuivasta ilmasta, mikä voi aiheuttaa ihon kuivuutta ja tassujen halkeilua. Ulkona liikkuvien kissojen tassujen kuntoa tulee seurata erityisen tarkasti. Varmista, että kissallasi on lämpimät lepopaikat ja riittävästi vettä saatavilla, sillä kuiva sisäilma lisää nesteytystarvetta. Talvisin kissat voivat olla vähemmän aktiivisia, joten kiinnitä huomiota myös liikunnan ja painonhallinnan tasapainoon.",
+            en: "The winter season requires special attention to cat care. Indoor cats often suffer from dry air, which can cause dry skin and cracked paws. The paw condition of outdoor cats should be monitored especially carefully. Make sure your cat has warm resting places and plenty of water available, as dry indoor air increases the need for hydration. In winter, cats may be less active, so also pay attention to the balance between exercise and weight management.",
+            ru: "Зимний сезон требует особого внимания к уходу за кошками. Домашние кошки часто страдают от сухого воздуха, который может вызвать сухость кожи и трещины на лапах. Состояние лап уличных кошек следует контролировать особенно внимательно. Убедитесь, что у вашей кошки есть теплые места для отдыха и много воды, так как сухой воздух в помещении увеличивает потребность в гидратации. Зимой кошки могут быть менее активными, поэтому также обратите внимание на баланс между физическими упражнениями и контролем веса."
         }
     },
     {
         id: 2,
         image: "./images/blog-vaccination.svg",
         date: "2025-12-10",
-        author: "Dr. Jukka Nieminen",
+        author: "Sairaanhoitaja Suvi Kukanaho",
         title: {
-            fi: "Miksi säännölliset rokotukset ovat tärkeitä?",
-            en: "Why Are Regular Vaccinations Important?",
-            sv: "Varför är regelbundna vaccinationer viktiga?"
+            fi: "Miksi säännölliset rokotukset ovat tärkeitä kissalle?",
+            en: "Why Are Regular Vaccinations Important for Cats?",
+            ru: "Почему регулярные вакцинации важны для кошек?"
         },
         excerpt: {
-            fi: "Rokotukset ovat yksi tärkeimmistä tavoista suojata lemmikkisi vakavista taudeilta. Ne eivät ainoastaan suojaa omaa lemmikkiäsi, vaan myös estävät tautien leviämistä muihin eläimiin. Käydään läpi, miksi säännöllinen rokotusohjelma on välttämätön.",
-            en: "Vaccinations are one of the most important ways to protect your pet from serious diseases. They not only protect your own pet but also prevent the spread of diseases to other animals. Let's go through why a regular vaccination program is essential.",
-            sv: "Vaccinationer är ett av de viktigaste sätten att skydda ditt husdjur från allvarliga sjukdomar. De skyddar inte bara ditt eget husdjur utan förhindrar också spridning av sjukdomar till andra djur. Låt oss gå igenom varför ett regelbundet vaccinationsprogram är nödvändigt."
+            fi: "Rokotukset ovat yksi tärkeimmistä tavoista suojata kissasi vakavista taudeilta. Ne eivät ainoastaan suojaa omaa kissaasi, vaan myös estävät tautien leviämistä muihin kissoihin. Käydään läpi, miksi säännöllinen rokotusohjelma on välttämätön.",
+            en: "Vaccinations are one of the most important ways to protect your cat from serious diseases. They not only protect your own cat but also prevent the spread of diseases to other cats. Let's go through why a regular vaccination program is essential.",
+            ru: "Вакцинации являются одним из важнейших способов защиты вашей кошки от серьезных заболеваний. Они не только защищают вашу собственную кошку, но и предотвращают распространение болезней на других кошек. Давайте рассмотрим, почему регулярная программа вакцинации необходима."
         },
         content: {
-            fi: "Rokotukset toimivat kouluttamalla lemmikkisi immuunijärjestelmää tunnistamaan ja torjumaan vaarallisia taudinaiheuttajia. Koirilla tärkeimmät rokotukset suojaavat koiratautia, parvovirusta ja hepatiittia vastaan. Kissoilla rokotukset suojaavat kissanvilustusta, kissojen panleukopeniaa ja kissaids-virusta vastaan. Säännöllinen rokotusohjelma alkaa pentuiässä ja jatkuu läpi lemmikkisi elämän.",
-            en: "Vaccinations work by training your pet's immune system to recognize and fight dangerous pathogens. For dogs, the most important vaccinations protect against distemper, parvovirus, and hepatitis. For cats, vaccinations protect against feline rhinotracheitis, feline panleukopenia, and feline AIDS virus. A regular vaccination program starts in puppyhood and continues throughout your pet's life.",
-            sv: "Vaccinationer fungerar genom att träna ditt husdjurs immunsystem att känna igen och bekämpa farliga patogener. För hundar skyddar de viktigaste vaccinationerna mot valpsjuka, parvovirus och hepatit. För katter skyddar vaccinationerna mot kattsnuva, kattsjuka och katt-AIDS-virus. Ett regelbundet vaccinationsprogram börjar i valpåldern och fortsätter genom hela ditt husdjurs liv."
+            fi: "Rokotukset toimivat kouluttamalla kissasi immuunijärjestelmää tunnistamaan ja torjumaan vaarallisia taudinaiheuttajia. Kissoille tärkeimmät rokotukset suojaavat kissanvilustusta, kissan panleukopeniaa (kissaruttoa) ja kissaleukemiaa vastaan. Säännöllinen rokotusohjelma alkaa pentuiässä ja jatkuu läpi kissasi elämän. Myös sisäkissoja on tärkeää rokottaa, sillä tauteja voi kulkeutua sisälle esimerkiksi kengissä tai vaatteissa.",
+            en: "Vaccinations work by training your cat's immune system to recognize and fight dangerous pathogens. For cats, the most important vaccinations protect against feline rhinotracheitis, feline panleukopenia (feline distemper), and feline leukemia. A regular vaccination program starts in kittenhood and continues throughout your cat's life. It's also important to vaccinate indoor cats, as diseases can be brought inside, for example, on shoes or clothes.",
+            ru: "Вакцинации работают, обучая иммунную систему вашей кошки распознавать и бороться с опасными патогенами. Для кошек наиболее важные вакцинации защищают от кошачьего ринотрахеита, панлейкопении кошек (кошачья чумка) и лейкемии кошек. Регулярная программа вакцинации начинается в котячьем возрасте и продолжается на протяжении всей жизни вашей кошки. Важно также вакцинировать домашних кошек, так как болезни могут быть занесены в дом, например, на обуви или одежде."
         }
     },
     {
         id: 3,
         image: "./images/blog-dental-care.svg",
         date: "2025-12-05",
-        author: "Dr. Anna Korhonen",
+        author: "ELL Julia Haukilintu",
         title: {
-            fi: "Lemmikin hampaiden hoito kotona",
-            en: "Pet Dental Care at Home",
-            sv: "Husdjurstandvård hemma"
+            fi: "Kissan hampaiden hoito kotona",
+            en: "Cat Dental Care at Home",
+            ru: "Уход за зубами кошки дома"
         },
         excerpt: {
-            fi: "Hampaiden terveys on usein aliarvotettu osa lemmikkien kokonaishyvinvointia. Huono suuhygienia voi johtaa vakaviin terveysongelmiin, kuten sydänsairauksiin. Opi, miten voit hoitaa lemmikkisi hampaita kotona.",
-            en: "Dental health is often an undervalued part of pets' overall wellbeing. Poor oral hygiene can lead to serious health problems, such as heart disease. Learn how you can take care of your pet's teeth at home.",
-            sv: "Tandhälsa är ofta en undervärderad del av husdjurs övergripande välbefinnande. Dålig munhygien kan leda till allvarliga hälsoproblem, såsom hjärtsjukdom. Lär dig hur du kan ta hand om ditt husdjurs tänder hemma."
+            fi: "Hampaiden terveys on usein aliarvotettu osa kissojen kokonaishyvinvointia. Huono suuhygienia voi johtaa vakaviin terveysongelmiin, kuten sydän- ja munuaissairauksiin. Opi, miten voit hoitaa kissasi hampaita kotona.",
+            en: "Dental health is often an undervalued part of cats' overall wellbeing. Poor oral hygiene can lead to serious health problems, such as heart and kidney disease. Learn how you can take care of your cat's teeth at home.",
+            ru: "Здоровье зубов часто недооценивается как часть общего благополучия кошек. Плохая гигиена полости рта может привести к серьезным проблемам со здоровьем, таким как болезни сердца и почек. Узнайте, как вы можете ухаживать за зубами вашей кошки дома."
         },
         content: {
-            fi: "Säännöllinen hampaiden harjaus on tärkein tapa ylläpitää lemmikkisi suun terveyttä. Aloita harjaaminen vähitellen ja käytä eläimille tarkoitettua hammastahnaa. Puruluurankaistujen ja hammaiden puhdistukseen tarkoitettujen makupalat voivat myös auttaa pitämään hampaat puhtaina. Suosittelemme säännöllisiä hammastarkastuksia eläinlääkärillä, jotta mahdolliset ongelmat voidaan havaita ajoissa.",
-            en: "Regular tooth brushing is the most important way to maintain your pet's oral health. Start brushing gradually and use toothpaste designed for animals. Chew bones and dental treats can also help keep teeth clean. We recommend regular dental checkups at the veterinarian so that potential problems can be detected early.",
-            sv: "Regelbunden tandborstning är det viktigaste sättet att upprätthålla ditt husdjurs munhälsa. Börja borsta gradvis och använd tandkräm designad för djur. Tuggben och tandrengöringsgodis kan också hjälpa till att hålla tänderna rena. Vi rekommenderar regelbundna tandkontroller hos veterinären så att potentiella problem kan upptäckas i tid."
+            fi: "Säännöllinen hampaiden harjaus on tärkein tapa ylläpitää kissasi suun terveyttä. Aloita harjaaminen vähitellen ja käytä kissoille tarkoitettua hammastahnaa - älä koskaan käytä ihmisten hammastahnaa! Hammashoidon herkkupalat ja lelut voivat myös auttaa pitämään hampaat puhtaina. Suosittelemme säännöllisiä hammastarkastuksia eläinlääkärillä, jotta mahdolliset ongelmat voidaan havaita ajoissa. Merkkejä hammasongelmista ovat muun muassa pahanhajuinen hengitys, syömisv aikeudet ja liiallinen kuolaaminen.",
+            en: "Regular tooth brushing is the most important way to maintain your cat's oral health. Start brushing gradually and use toothpaste designed for cats - never use human toothpaste! Dental treats and toys can also help keep teeth clean. We recommend regular dental checkups at the veterinarian so that potential problems can be detected early. Signs of dental problems include bad breath, difficulty eating, and excessive drooling.",
+            ru: "Регулярная чистка зубов - самый важный способ поддержания здоровья полости рта вашей кошки. Начинайте чистку постепенно и используйте зубную пасту, предназначенную для кошек - никогда не используйте человеческую зубную пасту! Зубные лакомства и игрушки также могут помочь сохранить зубы чистыми. Мы рекомендуем регулярные стоматологические осмотры у ветеринара, чтобы потенциальные проблемы можно было обнаружить рано. Признаки проблем с зубами включают неприятный запах изо рта, трудности с едой и чрезмерное слюнотечение."
         }
     },
     {
         id: 4,
         image: "./images/blog-nutrition.svg",
         date: "2025-11-28",
-        author: "Dr. Mikko Laaksonen",
+        author: "Sairaanhoitaja Susanna Torsti",
         title: {
-            fi: "Oikean ravinnon merkitys lemmikille",
-            en: "The Importance of Proper Nutrition for Pets",
-            sv: "Betydelsen av rätt näring för husdjur"
+            fi: "Oikean ravinnon merkitys kissalle",
+            en: "The Importance of Proper Nutrition for Cats",
+            ru: "Значение правильного питания для кошек"
         },
         excerpt: {
-            fi: "Oikea ravinto on perusta lemmikkisi terveydelle ja hyvinvoinnille. Eri ikäkausina ja elämäntilanteissa lemmikit tarvitsevat erilaista ravintoa. Tässä artikkelissa käymme läpi ravitsemuksen perusteet ja annamme vinkkejä oikean ruoan valintaan.",
-            en: "Proper nutrition is the foundation of your pet's health and wellbeing. At different ages and life stages, pets need different nutrition. In this article, we go through the basics of nutrition and give tips for choosing the right food.",
-            sv: "Rätt näring är grunden för ditt husdjurs hälsa och välbefinnande. Vid olika åldrar och livsstadier behöver husdjur olika näring. I denna artikel går vi igenom grunderna i näring och ger tips för att välja rätt mat."
+            fi: "Oikea ravinto on perusta kissasi terveydelle ja hyvinvoinnille. Eri ikäkausina ja elämäntilanteissa kissat tarvitsevat erilaista ravintoa. Tässä artikkelissa käymme läpi ravitsemuksen perusteet ja annamme vinkkejä oikean ruoan valintaan kissallesi.",
+            en: "Proper nutrition is the foundation of your cat's health and wellbeing. At different ages and life stages, cats need different nutrition. In this article, we go through the basics of nutrition and give tips for choosing the right food for your cat.",
+            ru: "Правильное питание - это основа здоровья и благополучия вашей кошки. В разные возрасты и на разных этапах жизни кошкам требуется различное питание. В этой статье мы рассмотрим основы питания и дадим советы по выбору правильной пищи для вашей кошки."
         },
         content: {
-            fi: "Laadukas ruoka sisältää oikean tasapainon proteiineja, rasvoja, hiilihydraatteja, vitamiineja ja kivennäisaineita. Pennuille ja pentuille tarvitaan enemmän proteiinia ja energiaa kasvuun, kun taas vanhemmille eläimille sopii kevyempi, helpommin sulavaa ruokaa. Ylipainolla on vakavia terveysvaikutuksia, joten oikean annosmäärän noudattaminen on tärkeää. Kysy meiltä neuvoa lemmikkisi yksilöllisten ravitsemustarpeiden selvittämiseen.",
-            en: "Quality food contains the right balance of proteins, fats, carbohydrates, vitamins, and minerals. Puppies and kittens need more protein and energy for growth, while older animals benefit from lighter, more easily digestible food. Obesity has serious health effects, so following the right portion size is important. Ask us for advice on determining your pet's individual nutritional needs.",
-            sv: "Kvalitetsmat innehåller rätt balans av proteiner, fetter, kolhydrater, vitaminer och mineraler. Valpar och kattungar behöver mer protein och energi för tillväxt, medan äldre djur drar nytta av lättare, lättare smältbar mat. Fetma har allvarliga hälsoeffekter, så att följa rätt portionsstorlek är viktigt. Fråga oss om råd för att fastställa ditt husdjurs individuella näringsbehov."
+            fi: "Kissat ovat lihansyöjiä ja tarvitsevat proteiinia enemmän kuin monet muut eläimet. Laadukas kissan ruoka sisältää oikean tasapainon eläinperäisiä proteiineja, rasvoja, vitamiineja ja kivennäisaineita. Pennuille tarvitaan enemmän energiaa kasvuun, kun taas vanhemmille kissoille sopii helpommin sulavaa ruokaa. Ylipainolla on vakavia terveysvaikutuksia kissoilla, joten oikean annosmäärän noudattaminen on tärkeää. Kissat tarvitsevat myös tauriinia, jota ei löydy kasviperäisestä ruoasta, joten kasvisruokavalio ei sovi kissoille.",
+            en: "Cats are carnivores and need more protein than many other animals. Quality cat food contains the right balance of animal proteins, fats, vitamins, and minerals. Kittens need more energy for growth, while older cats benefit from more easily digestible food. Obesity has serious health effects on cats, so following the right portion size is important. Cats also need taurine, which is not found in plant-based foods, so a vegetarian diet is not suitable for cats.",
+            ru: "Кошки - плотоядные животные и нуждаются в большем количестве белка, чем многие другие животные. Качественный корм для кошек содержит правильный баланс животных белков, жиров, витаминов и минералов. Котятам требуется больше энергии для роста, в то время как пожилые кошки получают пользу от более легко усваиваемой пищи. Ожирение имеет серьезные последствия для здоровья кошек, поэтому важно соблюдать правильный размер порций. Кошкам также необходим таурин, который не содержится в растительной пище, поэтому вегетарианская диета не подходит для кошек."
         }
     },
     {
         id: 5,
         image: "./images/blog-senior-care.svg",
         date: "2025-11-20",
-        author: "Dr. Laura Mäkinen",
+        author: "ELL Julia Haukilintu",
         title: {
-            fi: "Vanhenevan lemmikin erityistarpeet",
-            en: "Special Needs of Aging Pets",
-            sv: "Särskilda behov hos åldrande husdjur"
+            fi: "Vanhenevan kissan erityistarpeet",
+            en: "Special Needs of Aging Cats",
+            ru: "Особые потребности стареющих кошек"
         },
         excerpt: {
-            fi: "Kun lemmikkisi ikääntyy, sen tarpeet muuttuvat. Säännölliset terveystarkastukset, sopiva liikunta ja oikea ravinto auttavat varmistamaan, että vanhempi lemmikki voi nauttia elämästä mahdollisimman pitkään. Opi tunnistamaan ikääntymisen merkit ja vastaamaan niihin.",
-            en: "As your pet ages, its needs change. Regular health checkups, appropriate exercise, and proper nutrition help ensure that an older pet can enjoy life as long as possible. Learn to recognize the signs of aging and respond to them.",
-            sv: "När ditt husdjur åldras förändras dess behov. Regelbundna hälsokontroller, lämplig motion och rätt näring hjälper till att säkerställa att ett äldre husdjur kan njuta av livet så länge som möjligt. Lär dig att känna igen tecknen på åldrande och svara på dem."
+            fi: "Kun kissasi ikääntyy, sen tarpeet muuttuvat. Säännölliset terveystarkastukset, sopiva liikunta ja oikea ravinto auttavat varmistamaan, että vanhempi kissasi voi nauttia elämästä mahdollisimman pitkään. Opi tunnistamaan ikääntymisen merkit ja vastaamaan niihin.",
+            en: "As your cat ages, its needs change. Regular health checkups, appropriate exercise, and proper nutrition help ensure that your older cat can enjoy life as long as possible. Learn to recognize the signs of aging and respond to them.",
+            ru: "По мере старения вашей кошки ее потребности меняются. Регулярные медицинские осмотры, соответствующие физические нагрузки и правильное питание помогают гарантировать, что ваша пожилая кошка сможет наслаждаться жизнью как можно дольше. Научитесь распознавать признаки старения и реагировать на них."
         },
         content: {
-            fi: "Ikääntyminen tuo mukanaan erilaisia haasteita. Nivelrikko on yleinen ongelma vanhemmilla koirilla ja kissoilla, ja se voi tehdä liikkumisesta kivuliasta. Kipulääkitys ja niveltukea antavat ravintolisät voivat auttaa. Vanhemmat lemmikit tarvitsevat myös useampia terveystarkastuksia, jotta mahdolliset sairaudet voidaan havaita varhaisessa vaiheessa. Muista, että ikääntyminen ei ole sairaus - monet vanhat lemmikit voivat nauttia aktiivisesta ja onnellisesta elämästä oikealla hoidolla.",
-            en: "Aging brings various challenges. Arthritis is a common problem in older dogs and cats, and it can make movement painful. Pain medication and joint support supplements can help. Older pets also need more frequent health checkups so that potential diseases can be detected at an early stage. Remember that aging is not a disease - many old pets can enjoy an active and happy life with proper care.",
-            sv: "Åldrande medför olika utmaningar. Artrit är ett vanligt problem hos äldre hundar och katter, och det kan göra rörelse smärtsam. Smärtmedicin och ledstödjande kosttillskott kan hjälpa. Äldre husdjur behöver också oftare hälsokontroller så att potentiella sjukdomar kan upptäckas i ett tidigt skede. Kom ihåg att åldrande inte är en sjukdom - många gamla husdjur kan njuta av ett aktivt och lyckligt liv med rätt vård."
+            fi: "Ikääntyminen tuo mukanaan erilaisia haasteita. Nivelrikko on yleinen ongelma vanhemmilla kissoilla, ja se voi tehdä liikkumisesta ja hyppäämisestä kivuliasta. Kipulääkitys ja niveltukea antavat ravintolisät voivat auttaa. Vanhemmat kissat tarvitsevat myös useampia terveystarkastuksia, jotta mahdolliset sairaudet kuten munuaissairaudet ja kilpirauhasen vajaatoiminta voidaan havaita varhaisessa vaiheessa. Varmista, että vanhalla kissallasi on helppo pääsy ruoka- ja vesikuppeihin sekä hiekkalaatikkoon. Muista, että ikääntyminen ei ole sairaus - monet vanhat kissat voivat nauttia aktiivisesta ja onnellisesta elämästä oikealla hoidolla.",
+            en: "Aging brings various challenges. Arthritis is a common problem in older cats, and it can make moving and jumping painful. Pain medication and joint support supplements can help. Older cats also need more frequent health checkups so that potential diseases like kidney disease and hypothyroidism can be detected at an early stage. Make sure your older cat has easy access to food and water bowls and the litter box. Remember that aging is not a disease - many old cats can enjoy an active and happy life with proper care.",
+            ru: "Старение приносит различные проблемы. Артрит - распространенная проблема у пожилых кошек, и это может сделать движение и прыжки болезненными. Обезболивающие препараты и добавки для поддержки суставов могут помочь. Пожилые кошки также нуждаются в более частых медицинских осмотрах, чтобы потенциальные заболевания, такие как болезнь почек и гипотиреоз, можно было обнаружить на ранней стадии. Убедитесь, что у вашей пожилой кошки есть легкий доступ к мискам с едой и водой, а также к лотку. Помните, что старение - это не болезнь - многие старые кошки могут наслаждаться активной и счастливой жизнью при правильном уходе."
         }
     },
     {
         id: 6,
         image: "./images/blog-behavior.svg",
         date: "2025-11-15",
-        author: "Dr. Sami Virtanen",
+        author: "Sairaanhoitaja Suvi Kukanaho",
         title: {
-            fi: "Lemmikin käyttäytymisongelmien ratkaiseminen",
-            en: "Solving Pet Behavioral Problems",
-            sv: "Lösa husdjurs beteendeproblem"
+            fi: "Kissan käyttäytymisongelmien ratkaiseminen",
+            en: "Solving Cat Behavioral Problems",
+            ru: "Решение поведенческих проблем кошек"
         },
         excerpt: {
-            fi: "Käyttäytymisongelmat voivat olla haasteellisia sekä lemmikille että omistajalle. Ne voivat johtua monista syistä, kuten stressistä, pelosta tai terveysongelmista. Tässä artikkelissa käsittelemme yleisimpiä käyttäytymisongelmia ja niiden ratkaisukeinoja.",
-            en: "Behavioral problems can be challenging for both pets and owners. They can result from many causes, such as stress, fear, or health issues. In this article, we address the most common behavioral problems and their solutions.",
-            sv: "Beteendeproblem kan vara utmanande för både husdjur och ägare. De kan bero på många orsaker, såsom stress, rädsla eller hälsoproblem. I denna artikel tar vi upp de vanligaste beteendeproblemen och deras lösningar."
+            fi: "Käyttäytymisongelmat voivat olla haasteellisia sekä kissalle että omistajalle. Ne voivat johtua monista syistä, kuten stressistä, pelosta tai terveysongelmista. Tässä artikkelissa käsittelemme yleisimpiä kissankäyttäytymisongelmia ja niiden ratkaisukeinoja.",
+            en: "Behavioral problems can be challenging for both cats and owners. They can result from many causes, such as stress, fear, or health issues. In this article, we address the most common cat behavioral problems and their solutions.",
+            ru: "Поведенческие проблемы могут быть сложными как для кошек, так и для владельцев. Они могут возникать по многим причинам, таким как стресс, страх или проблемы со здоровьем. В этой статье мы рассмотрим наиболее распространенные поведенческие проблемы кошек и их решения."
         },
         content: {
-            fi: "Yleisimpiä käyttäytymisongelmia ovat haukkuminen, agressiivisuus, erotusahdistus ja epäpuhtaus. Ennen kuin aloitat käyttäytymisen muokkaamisen, on tärkeää sulkea pois mahdolliset terveydelliset syyt. Monet käyttäytymisongelmat voidaan ratkaista johdonmukaisella koulutuksella, positiivisella vahvistamisella ja kärsivällisyydellä. Vakavammissa tapauksissa suosittelemme eläinkäyttäytymisen asiantuntijan konsultointia.",
-            en: "The most common behavioral problems are barking, aggression, separation anxiety, and uncleanliness. Before starting behavior modification, it's important to rule out possible health causes. Many behavioral problems can be solved with consistent training, positive reinforcement, and patience. In more severe cases, we recommend consulting an animal behavior specialist.",
-            sv: "De vanligaste beteendeproblemen är skällning, aggression, separationsångest och orenhet. Innan du börjar beteendemodifiering är det viktigt att utesluta möjliga hälsoorsaker. Många beteendeproblem kan lösas med konsekvent träning, positiv förstärkning och tålamod. I allvarligare fall rekommenderar vi att konsultera en djurbeteendespecialist."
+            fi: "Yleisimpiä kissankäyttäytymisongelmia ovat epäpuhtaus, aggressiivisuus, liiallinen naukuminen ja raapimisongelmat. Ennen kuin aloitat käyttäytymisen muokkaamisen, on tärkeää sulkea pois mahdolliset terveydelliset syyt. Monet käyttäytymisongelmat voidaan ratkaista ympäristön rikastamisella, oikeanlaisten raapimistelineiden tarjoamisella ja stressin vähentämisellä. Kissanminttua ja rauhoittavia feromonituotteita voi hyödyntää stressin hallinnassa. Muista, että rangaistukset eivät toimi kissoilla - positiivinen vahvistaminen ja kärsivällisyys ovat avaimia onnistuneeseen käyttäytymisen muokkaamiseen.",
+            en: "The most common cat behavioral problems are inappropriate elimination, aggression, excessive meowing, and scratching issues. Before starting behavior modification, it's important to rule out possible health causes. Many behavioral problems can be solved by environmental enrichment, providing appropriate scratching posts, and reducing stress. Catnip and calming pheromone products can be used in stress management. Remember that punishment doesn't work with cats - positive reinforcement and patience are keys to successful behavior modification.",
+            ru: "Наиболее распространенные поведенческие проблемы кошек - это несоответствующее мочеиспускание, агрессия, чрезмерное мяуканье и проблемы с царапаньем. Перед началом коррекции поведения важно исключить возможные причины, связанные со здоровьем. Многие поведенческие проблемы можно решить путем обогащения окружающей среды, предоставления соответствующих когтеточек и снижения стресса. Кошачья мята и успокаивающие феромонные продукты могут быть использованы для управления стрессом. Помните, что наказание не работает с кошками - положительное подкрепление и терпение являются ключами к успешной коррекции поведения."
         }
     }
 ];

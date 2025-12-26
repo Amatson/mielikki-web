@@ -1,0 +1,96 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Publish mode: enable editorial workflow for draft/review/publish flow
+publish_mode: editorial_workflow
+
+# Media files configuration
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+# Collections define the structure for different content types
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Post ID"
+        name: "id"
+        widget: "number"
+        value_type: "int"
+        min: 1
+        hint: "Unique numeric ID for this post"
+      
+      - label: "Author"
+        name: "author"
+        widget: "select"
+        options:
+          - "ELL Julia Haukilintu"
+          - "Sairaanhoitaja Suvi Kukanaho"
+          - "Sairaanhoitaja Susanna Torsti"
+        hint: "Select the post author"
+      
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        hint: "Publication date"
+      
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+        required: false
+        hint: "Upload a cat-related image (recommended: 600x400px)"
+      
+      - label: "Title (Finnish)"
+        name: "title_fi"
+        widget: "string"
+        hint: "Blog post title in Finnish"
+      
+      - label: "Title (English)"
+        name: "title_en"
+        widget: "string"
+        hint: "Blog post title in English"
+      
+      - label: "Title (Russian)"
+        name: "title_ru"
+        widget: "string"
+        hint: "Blog post title in Russian / Заголовок на русском"
+      
+      - label: "Excerpt (Finnish)"
+        name: "excerpt_fi"
+        widget: "text"
+        hint: "Short summary in Finnish (2-3 sentences)"
+      
+      - label: "Excerpt (English)"
+        name: "excerpt_en"
+        widget: "text"
+        hint: "Short summary in English (2-3 sentences)"
+      
+      - label: "Excerpt (Russian)"
+        name: "excerpt_ru"
+        widget: "text"
+        hint: "Short summary in Russian / Краткое описание (2-3 предложения)"
+      
+      - label: "Content (Finnish)"
+        name: "body_fi"
+        widget: "markdown"
+        hint: "Full article content in Finnish. Use markdown formatting."
+      
+      - label: "Content (English)"
+        name: "body_en"
+        widget: "markdown"
+        hint: "Full article content in English. Use markdown formatting."
+      
+      - label: "Content (Russian)"
+        name: "body_ru"
+        widget: "markdown"
+        hint: "Full article content in Russian / Полное содержание статьи. Используйте форматирование markdown."

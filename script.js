@@ -162,8 +162,8 @@ function formatDate(dateString) {
         return date.toLocaleDateString('fi-FI', options);
     } else if (currentLanguage === 'en') {
         return date.toLocaleDateString('en-US', options);
-    } else if (currentLanguage === 'sv') {
-        return date.toLocaleDateString('sv-SE', options);
+    } else if (currentLanguage === 'ru') {
+        return date.toLocaleDateString('ru-RU', options);
     }
     return date.toLocaleDateString();
 }
@@ -199,8 +199,8 @@ function initializeContactForm() {
             successMessage = 'Kiitos yhteydenotostasi! Otamme sinuun yhteyttä pian.';
         } else if (currentLanguage === 'en') {
             successMessage = 'Thank you for contacting us! We will get back to you soon.';
-        } else if (currentLanguage === 'sv') {
-            successMessage = 'Tack för att du kontaktar oss! Vi återkommer till dig snart.';
+        } else if (currentLanguage === 'ru') {
+            successMessage = 'Спасибо за обращение! Мы свяжемся с вами в ближайшее время.';
         }
         
         alert(successMessage);
